@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+:root{
+--cor-primaria: #124A79;
+--cor-secundaria: #2F4565;
+--cor-fundo:#ffffff;
+--fonte-principal:'Montserrat', sans-serif;;
+}
+
+#barra_navegacao{
+    background-color: var(--cor-primaria);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-fundo);
+    font-size: 1.5rem;
+    margin-bottom :3rem;
+     
+}
+#barra_navegacao ul{
+    margin-right: 10.5rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    list-style: none;
+
+}
+a{
+    color: var(--cor-fundo);
+    text-decoration: none;
+     transition: color 0.3s;
+}
+
+#barra_navegacao ul li a:hover {
+    color: #FFD700; /* muda a cor quando o mouse passa por cima, pode trocar pra qualquer cor */
+    text-decoration: underline; /* opcional: coloca um sublinhado só no hover */
+}
+
+#barra_navegacao h1{
+    margin-left: 10.3rem;
+}
+
+
+
+.postit_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: var(--cor-fundo);
+}
+
+.postit{
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 2rem;
+    height: 18rem;
+    width: 47%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+
+.postit_texto{
+    color: var(--cor-fundo);
+    margin-left: 0;
+    margin-top: 2rem;
+}
+.postit:hover {
+    transform: scale(1.03) rotate(-0.5deg);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    background-color: var(--cor-primaria); /* ou outra cor que combine com tua paleta */
+}
+
+
+#conteudo button{
+    text-decoration: none;
+}
+
+#conteudo h1{
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px var(--cor-secundaria) solid;
+    padding-bottom: 2rem;
+    
+}
+
+#conteudo h2, p , ul ,ol{
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    color: var(--cor-secundaria);
+}
+
+#conteudo h2{
+    color: var(--cor-primaria);
+}
+
+#conteudo img{
+    width: 2%;
+    margin-left: 3rem;
+    transition: transform 0.3s ease; 
+}
+#conteudo img:hover{
+    transform: scale(1.5) rotate(-10deg);
+}
